@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chosubin</title>
+    <link rel="stylesheet" href="./w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+	        font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+	        line-height: 150%;
+	    }
+        body{
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        section{
+            display: flex;
+        }
+        article{
+            flex: 4;
+            padding-right: 1.5em;
+        }
+        aside{
+            flex: 1;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        console.log("have a nice day!")
+        function zoomIn(event) {
+    event.target.style.width = "300px";
+    event.target.style.height = "300px";
+    event.target.style.transition = "all 0.5s";
+  }
+
+  function zoomOut(event) {
+    event.target.style.width = "200px";
+    event.target.style.height = "200px";
+    event.target.style.transition = "all 0.5s";
+  }
+    </script>
+</head>
+<body>
+    <header class="w3-container w3-margin-top w3-center">
+        <img src="./v.png" alt="" width="200em" height="200em">
+        <h1>Cho Subin</h1>
+
+    </header>
+    <nav class="w3-center">
+        <ul class="w3-bar">
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#about">about</a></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#picture">picture</a></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#like">like</a></li>
+            <li class="w3-bar-item w3-button w3-padding-large"><a href="#certificate">certificate</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <section>
+        <article class="left">
+
+            <div id="about">
+                <h2>✨ about</h2>
+                <h6>
+                    <ul>
+                        ㅡ 현재 동아대학교 웹프로그래밍 강의를 수강중입니다. <br> 데이터 분석과 디자인을 공부하고 있습니다. 
+                    기록을 관찰하고 활용하는 것을 좋아합니다. <br> 취미로 사진을 찍고, 악기를 연주합니다.
+                    </ul> 
+                </h6>
+            </div>
+
+            <div id="picture">
+                <h2>📷 picture</h2>
+                <div class="w3-container w3-margin-top">
+                    <img src="./1.jpg" alt="" width, height="200em"
+                    onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                    <img src="./2.jpg" alt="" width, height="200em"
+                    onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)">
+                    <img src="./3.jpg" alt="" width, height="200em"
+                    onmouseenter="zoomIn(event)"
+                    onmouseleave="zoomOut(event)"
+>
+                </div>
+
+            </div>
+            <div id="like">
+                <h2>💖 like</h2>
+                <h6>
+                    <ul>
+                        <li>ㅡ Singer : 체리필터, 데이식스</li>
+                        <li>ㅡ Dessert : Cherry Foret Noire</li>
+                        <li>ㅡ Moive : 윤희에게, 매드맥스 : 분노의 도로 </li>
+                        <li>ㅡ Youtube : 짧은 악기 연주 영상 보기</li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dPNVJZP3i5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </ul>
+                </h6>
+            </div>
+
+            <div id="certificate">
+                <h2>📋 certificate</h2>
+                <table class="w3-table-all w3-hoverable">
+                    <tr class="w3-pale-blue">
+                        <th>취득일자</th>
+                        <th>자격증</th>
+                    </tr>
+                    <tr>
+                        <td>2020.08</td>
+                        <td>컴퓨터활용능력 1급</td>
+                    </tr>
+                    <tr>
+                        <td>2021.07</td>
+                        <td>GTQ 1급</td>
+                    </tr>
+                    <tr>
+                        <td>2021.09</td>
+                        <td>ADsP</td>
+                    </tr>
+                </table>
+            </div><br>
+
+        </article>
+
+        <aside class="right">
+            <div class="login w3-margin-top">
+                <form action="#">
+                    ID : <input type="text" class="w3-input w3-border" name="id"> <br>
+                    PW : <input type="password" class="w3-input w3-border" name="password">
+                    <br>
+                    <button class="w3-button w3-border" >ok</button>
+                </form>
+            </div>
+
+        </aside>
+    </section>
+    <footer style="background-color:lightgray;">
+        <div class="w3-row">
+            <div class="w3-col s4  w3-container">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Phone : 010 1111 1111</li>
+                    <li><a href="mailto:o8naif@donga.ac.kr">E-mail : o8naif@donga.ac.kr</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>SNS</h4>
+                <i class="fa fa-instagram" style="font-size:30px;padding-inline: 10px;"></i>
+                <i class="fa fa-facebook" style="font-size:30px;padding-inline: 10px;"></i>
+                <a href="https://chosubindonga.github.io/web/"><i class="fa fa-github" style="font-size:30px;padding-inline: 10px;"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
